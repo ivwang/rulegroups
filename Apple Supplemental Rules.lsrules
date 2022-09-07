@@ -24,7 +24,10 @@
       "action" : "allow",
       "notes" : "Refer to https:\/\/support.apple.com\/en-us\/HT210060\n - iCloud Services",
       "ports" : "443",
-      "remote-domains" : "apple-cloudkit.com, apple-livephotoskit.com"
+      "remote-domains" : [
+        "apple-cloudkit.com",
+        "apple-livephotoskit.com"
+      ]
     }
   ]
 }
