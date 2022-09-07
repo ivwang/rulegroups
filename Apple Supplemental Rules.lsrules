@@ -3,35 +3,42 @@
   "name" : "Apple Supplemental Rules",
   "rules" : [
     {
+      "owner" : "System",
       "action" : "allow",
       "direction" : "incoming",
       "notes" : "Refer to https:\/\/support.apple.com\/en-us\/HT210060",
       "remote-addresses" : "17.*.*.*"
     },
     {
+      "owner" : "Me",
       "action" : "allow",
       "direction" : "incoming",
       "notes" : "Refer to https:\/\/support.apple.com\/en-us\/HT210060",
       "remote-addresses" : "17.*.*.*"
     },
     {
+      "owner" : "system",
       "action" : "allow",
-      "notes" : "Refer to https:\/\/support.apple.com\/en-us\/HT210060\n\nPorts\n - 465: SMTP (TLS\/STARTTLS\/SSL)\n - 993: IMAP (TLS\/SSL)",
+      "notes" : "Refer to https:\/\/support.apple.com\/en-us\/HT210060",
       "ports" : "80, 443",
       "remote-addresses" : "17.*.*.*"
     },
     {
+      "owner" : "me",
       "action" : "allow",
-      "notes" : "Refer to https:\/\/support.apple.com\/en-us\/HT210060\n\nPorts\n - 465: SMTP (TLS\/STARTTLS\/SSL)\n - 993: IMAP (TLS\/SSL)",
+      "notes" : "Refer to https:\/\/support.apple.com\/en-us\/HT210060",
       "ports" : "80, 443",
       "remote-addresses" : "17.*.*.*"
     },
     {
+      "owner" : "system",
       "action" : "allow",
+      "notes" : "me.com for Apple mailboxes prior to iCloud\n\nPorts\n - 465: SMTP (TLS\/STARTTLS\/SSL)\n - 993: IMAP (TLS\/SSL)",
       "ports" : "465, 993",
       "remote-domains" : "me.com"
     },
     {
+      "owner" : "me",
       "action" : "allow",
       "notes" : "me.com for Apple mailboxes prior to iCloud\n\nPorts\n - 465: SMTP (TLS\/STARTTLS\/SSL)\n - 993: IMAP (TLS\/SSL)",
       "ports" : "465, 993",
