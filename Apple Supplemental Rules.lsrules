@@ -26,8 +26,14 @@
       "ports" : "443",
       "remote-domains" : [
         "apple-cloudkit.com",
-        "apple-livephotoskit.com",
+        "apple-livephotoskit.com"
       ]
+    },
+    {
+      "action" : "allow",
+      "notes" : "Auxiliary ports\n\nPorts\n - 3478: STUN for identityservicesd\n - 3491: identityservicesd\n - 3493: identityservicesd",
+      "ports" : "3478, 3491, 3493",
+      "remote-addresses" : "17.*.*.*"
     }
   ]
 }
