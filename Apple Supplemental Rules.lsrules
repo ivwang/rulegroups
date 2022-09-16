@@ -31,10 +31,11 @@
     },
     {
       "action" : "allow",
-      "notes" : "Auxiliary Apple domains\n\nDomains\n - apple.news: Apple News\n",
+      "notes" : "Auxiliary Apple domains\n\nDomains\n - apple.news: Apple News\n - edge.apple: needed by nehelper",
       "remote-domains" : [
         "apple.news",
         "edge.apple"
+      ]
     },
     {
       "action" : "allow",
