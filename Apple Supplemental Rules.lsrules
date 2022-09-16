@@ -31,10 +31,11 @@
     },
     {
       "action" : "allow",
-      "notes" : "Auxiliary Apple domains\n\nDomains\n - apple.news: Apple News\n - edge.apple: needed by nehelper",
+      "notes" : "Auxiliary Apple domains\n\nDomains\n - apple.news: Apple News\n - edge.apple: needed by nehelper\n - safebrowsing.apple: Safari SafeBrowsing Service",
       "remote-domains" : [
         "apple.news",
-        "edge.apple"
+        "edge.apple",
+        "safebrowsing.apple"
       ]
     },
     {
