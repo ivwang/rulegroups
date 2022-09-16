@@ -31,6 +31,13 @@
     },
     {
       "action" : "allow",
+      "notes" : "Auxiliary Apple domains\n\nDomains\n - apple.news: Apple News\n",
+      "remote-domains" : [
+        "apple.news",
+        "edge.apple"
+    },
+    {
+      "action" : "allow",
       "notes" : "Auxiliary ports\n\nPorts\n - 3478: STUN for identityservicesd\n - 3491: identityservicesd\n - 3493: identityservicesd",
       "ports" : "3478, 3491, 3493",
       "remote-addresses" : "17.*.*.*"
