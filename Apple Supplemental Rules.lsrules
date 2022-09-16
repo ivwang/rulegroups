@@ -31,12 +31,13 @@
     },
     {
       "action" : "allow",
-      "notes" : "Auxiliary Apple domains\n\nDomains\n - apple.news: Apple News\n - edge.apple: needed by nehelper\n - safebrowsing.apple: Safari SafeBrowsing Service\n - apple-mapkit.com: Apple Maps",
+      "notes" : "Auxiliary Apple domains\n\nDomains\n - apple.news: Apple News\n - edge.apple: nehelper\n - safebrowsing.apple: Safari SafeBrowsing Service\n - apple-mapkit.com: Apple Maps\n - aaplimg.com: locationd",
       "remote-domains" : [
         "apple.news",
         "edge.apple",
         "safebrowsing.apple",
-        "apple-mapkit.com"
+        "apple-mapkit.com",
+        "aaplimg.com"
       ]
     },
     {
