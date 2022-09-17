@@ -42,13 +42,14 @@
     },
     {
       "action" : "allow",
-      "notes" : "Auxiliary ports\n\nPorts\n - 3478: STUN for identityservicesd\n - 3491: identityservicesd\n - 3493: identityservicesd",
-      "ports" : "3478, 3491, 3493",
+      "process" : "/System/Library/PrivateFrameworks/IDS.framework/identityservicesd.app/Contents/MacOS/identityservicesd",
+      "notes" : "identityservicesd makes connections to 17.0.0.0/8 on various TCP and UDP ports\n\n UDP Ports\n - 3478, 3483, 3491, 3493\n\n TCP Ports\n - 1025, 1025, 1027",
       "remote-addresses" : "17.*.*.*"
     },
     {
       "action" : "allow",
-      "notes" : "Auxiliary protocols\n\nProtocols\n - icmp: wifivelocityd",
+      "process" : "/usr/libexec/wifivelocityd",
+      "notes" : "wifivelocityd sends icmp traffic to 17.0.0.0/8",
       "protocol" : "icmp",
       "remote-addresses" : "17.*.*.*"
     }
