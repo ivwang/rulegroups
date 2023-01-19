@@ -44,7 +44,14 @@
       "action" : "allow",
       "process" : "/System/Library/PrivateFrameworks/IDS.framework/identityservicesd.app/Contents/MacOS/identityservicesd",
       "notes" : "identityservicesd makes connections to 17.0.0.0/8 on various TCP and UDP ports\n\n UDP Ports\n - 3478, 3483, 3491, 3493\n\n TCP Ports\n - 1025, 1025, 1027",
-      "remote-addresses" : "17.*.*.*"
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "process" : "/System/Library/PrivateFrameworks/IDS.framework/identityservicesd.app/Contents/MacOS/identityservicesd",
+      "notes" : "identityservicesd makes connections to 17.0.0.0/8 on various TCP and UDP ports\n\n UDP Ports\n - 3478, 3483, 3491, 3493\n\n TCP Ports\n - 1025, 1025, 1027",
+      "remote" : "any",
+      "direction" : "incoming"
     },
     {
       "action" : "allow",
