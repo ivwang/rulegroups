@@ -22,7 +22,19 @@
     },
     {
       "action" : "allow",
-      "notes" : "Refer to https:\/\/support.apple.com\/en-us\/HT210060\n - iCloud Services",
+      "notes" : "Refer to https:\/\/support.apple.com\/en-us\/HT210060\n - Certificate validation",
+      "ports" : "80",
+      "remote-hosts" : [
+        "crl.entrust.net",
+        "crl3.digicert.com",
+        "crl4.digicert.com",
+        "ocsp.digicert.com",
+        "ocsp.entrust.net"
+      ]
+    },
+    {
+      "action" : "allow",
+      "notes" : "Refer to https:\/\/support.apple.com\/en-us\/HT210060\n - iCloud",
       "ports" : "443",
       "remote-domains" : [
         "apple-cloudkit.com",
