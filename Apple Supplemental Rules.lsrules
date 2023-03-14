@@ -54,6 +54,19 @@
     },
     {
       "action" : "allow",
+      "process" : "/usr/sbin/mDNSResponder",
+      "notes" : "mDNSResponder typically communicates via UDP port 5353; although use of other high ephemeral ports are also observed.",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "process" : "/usr/sbin/mDNSResponder",
+      "notes" : "mDNSResponder typically communicates via UDP port 5353; although use of other high ephemeral ports are also observed.\n\nConsidering there is no HIGH CVEs against mDNSResponder since CVE-2016-4739, incoming connection is granted to reduce frictions to general users",
+      "remote" : "any",
+      "direction" : "incoming"
+    },
+    {
+      "action" : "allow",
       "process" : "/System/Library/PrivateFrameworks/IDS.framework/identityservicesd.app/Contents/MacOS/identityservicesd",
       "notes" : "identityservicesd makes connections to 17.0.0.0/8 on various TCP and UDP ports\n\n UDP Ports\n - 3478, 3483, 3491, 3493\n\n TCP Ports\n - 1025, 1025, 1027",
       "remote" : "any"
