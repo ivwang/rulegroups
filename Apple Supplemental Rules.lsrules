@@ -55,12 +55,6 @@
     {
       "action" : "allow",
       "process" : "/usr/sbin/mDNSResponder",
-      "notes" : "mDNSResponder typically communicates via UDP port 5353; although use of other high ephemeral ports are also observed.",
-      "remote" : "any"
-    },
-    {
-      "action" : "allow",
-      "process" : "/usr/sbin/mDNSResponder",
       "notes" : "mDNSResponder typically communicates via UDP port 5353; although use of other high ephemeral ports are also observed.\n\nConsidering there is no HIGH CVEs against mDNSResponder since CVE-2016-4739, incoming connection is granted to reduce frictions to general users",
       "remote" : "any",
       "direction" : "incoming"
