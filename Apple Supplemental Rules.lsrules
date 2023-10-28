@@ -78,6 +78,13 @@
       "notes" : "wifivelocityd sends icmp traffic to 17.0.0.0/8",
       "protocol" : "icmp",
       "remote-addresses" : "17.*.*.*"
+    },
+    {
+      "action" : "allow",
+      "process" : "/System/Library/PrivateFrameworks/ChronoCore.framework/Support/chronod",
+      "notes" : "Starting from macOS Sonoma, ChronoCore Framework is introduced for supporting desktop widget.\n\nConsidering there is no HIGH CVEs against ChronoCore Framework since its application on iOS, incoming connection is granted to reduce frictions to general users",
+      "remote" : "any",
+      "direction" : "incoming"
     }
   ]
 }
