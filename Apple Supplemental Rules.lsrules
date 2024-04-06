@@ -85,6 +85,13 @@
       "notes" : "Starting from macOS Sonoma, ChronoCore Framework is introduced for supporting desktop widget.\n\nConsidering there is no HIGH CVEs against ChronoCore Framework since its application on iOS, incoming connection is granted to reduce frictions to general users",
       "remote" : "any",
       "direction" : "incoming"
+    },
+    {
+      "action" : "allow",
+      "process" : "/System/Library/PrivateFrameworks/WeatherDaemon.framework/weatherd"
+      "notes" : "Incoming connections from Apple owned IPv6 ranges (likely Private Relay), the connections may be result of enabling Handoff and Continuity functions.\n\nThis rule can be left disabled without apparent impact to macOS usability",
+      "remote" : "any",
+      "direction" : "incoming"
     }
   ]
 }
