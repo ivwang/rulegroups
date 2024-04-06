@@ -88,7 +88,7 @@
     },
     {
       "action" : "allow",
-      "process" : "/System/Library/PrivateFrameworks/WeatherDaemon.framework/weatherd"
+      "process" : "/System/Library/PrivateFrameworks/WeatherDaemon.framework/weatherd",
       "notes" : "Incoming connections from Apple owned IPv6 ranges (likely Private Relay), the connections may be result of enabling Handoff and Continuity functions.\n\nThis rule can be left disabled without apparent impact to macOS usability",
       "remote" : "any",
       "direction" : "incoming"
