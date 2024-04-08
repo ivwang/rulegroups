@@ -18,10 +18,7 @@
       "action" : "allow",
       "direction" : "incoming",
       "notes" : "Apple IPv6 ranges",
-      "remote-addresses" : [
-        "2620:149:*:*:*:*:*:*",
-        "2620:0:1b00:*:*:*:*:*-2620:0:1b07:*:*:*:*:*"
-      ]
+      "remote-addresses" : "2620:149:*:*:*:*:*:*"
     },
     {
       "action" : "allow",
