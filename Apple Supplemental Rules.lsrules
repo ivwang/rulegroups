@@ -16,6 +16,21 @@
     },
     {
       "action" : "allow",
+      "direction" : "incoming",
+      "notes" : "Apple IPv6 ranges",
+      "remote-addresses" : [
+        "2620:149:*:*:*:*:*:*",
+        "2620:0:1b00:*:*:*:*:*-2620:0:1b07:*:*:*:*:*"
+      ]
+    },
+    {
+      "action" : "allow",
+      "direction" : "incoming",
+      "notes" : "Apple South Asia IPv6 ranges",
+      "remote-addresses" : "2403:300:*:*:*:*:*:*"
+    },
+    {
+      "action" : "allow",
       "notes" : "me.com for Apple mailboxes prior to iCloud\n\nPorts\n - 465: SMTP (TLS\/STARTTLS\/SSL)\n - 993: IMAP (TLS\/SSL)",
       "ports" : "465, 993",
       "remote-domains" : "me.com"
