@@ -17,13 +17,13 @@
     {
       "action" : "allow",
       "direction" : "incoming",
-      "notes" : "Apple IPv6 ranges",
+      "notes" : "Apple IPv6 ranges\n\nRefer to https://ipinfo.io/AS714/2620:149::/32",
       "remote-addresses" : "2620:149:*:*:*:*:*:*"
     },
     {
       "action" : "allow",
       "direction" : "incoming",
-      "notes" : "Apple South Asia IPv6 ranges",
+      "notes" : "Apple South Asia IPv6 ranges\n\nRefer to https://ipinfo.io/AS714/2403:300::/32",
       "remote-addresses" : "2403:300:*:*:*:*:*:*"
     },
     {
