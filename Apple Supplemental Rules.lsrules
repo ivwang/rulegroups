@@ -5,12 +5,12 @@
     {
       "action" : "allow",
       "direction" : "incoming",
-      "notes" : "Refer to https:\/\/support.apple.com\/en-us\/HT210060",
+      "notes" : "Refer to https://support.apple.com/en-us/HT210060",
       "remote-addresses" : "17.*.*.*"
     },
     {
       "action" : "allow",
-      "notes" : "Refer to https:\/\/support.apple.com\/en-us\/HT210060",
+      "notes" : "Refer to https://support.apple.com/en-us/HT210060",
       "ports" : "80, 443",
       "remote-addresses" : "17.*.*.*"
     },
@@ -28,13 +28,13 @@
     },
     {
       "action" : "allow",
-      "notes" : "me.com for Apple mailboxes prior to iCloud\n\nPorts\n - 465: SMTP (TLS\/STARTTLS\/SSL)\n - 993: IMAP (TLS\/SSL)",
+      "notes" : "me.com for Apple mailboxes prior to iCloud\n\nPorts\n - 465: SMTP (TLS/STARTTLS/SSL)\n - 993: IMAP (TLS/SSL)",
       "ports" : "465, 993",
       "remote-domains" : "me.com"
     },
     {
       "action" : "allow",
-      "notes" : "Refer to https:\/\/support.apple.com\/en-us\/HT210060\n - Certificate validation",
+      "notes" : "Refer to https://support.apple.com/en-us/HT210060\n - Certificate validation",
       "ports" : "80",
       "remote-hosts" : [
         "crl.entrust.net",
@@ -46,7 +46,7 @@
     },
     {
       "action" : "allow",
-      "notes" : "Refer to https:\/\/support.apple.com\/en-us\/HT210060\n - iCloud",
+      "notes" : "Refer to https://support.apple.com/en-us/HT210060\n - iCloud",
       "ports" : "443",
       "remote-domains" : [
         "apple-cloudkit.com",
