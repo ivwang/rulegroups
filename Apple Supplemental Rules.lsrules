@@ -66,26 +66,7 @@
     },
     {
       "action" : "allow",
-      "process" : "/System/Library/PrivateFrameworks/IDS.framework/identityservicesd.app/Contents/MacOS/identityservicesd",
-      "notes" : "identityservicesd makes connections to 17.0.0.0/8 on various TCP and UDP ports\n\n UDP Ports\n - 3478, 3483, 3491, 3493\n\n TCP Ports\n - 1025, 1025, 1027",
-      "remote-addresses" : "17.*.*.*"
-    },
-    {
-      "action" : "allow",
-      "process" : "/System/Library/PrivateFrameworks/IDS.framework/identityservicesd.app/Contents/MacOS/identityservicesd",
-      "notes" : "identityservicesd makes connections to Apple owned IPv6 ranges on various TCP and UDP ports\n\n UDP Ports\n - 3478, 3483, 3491, 3493\n\n TCP Ports\n - 1025, 1025, 1027",
-      "remote-addresses" : "2620:149:*:*:*:*:*:*"
-    },
-    {
-      "action" : "allow",
-      "process" : "/System/Library/PrivateFrameworks/IDS.framework/identityservicesd.app/Contents/MacOS/identityservicesd",
-      "notes" : "identityservicesd makes connections to Apple owned IPv6 ranges on various TCP and UDP ports\n\n UDP Ports\n - 3478, 3483, 3491, 3493\n\n TCP Ports\n - 1025, 1025, 1027",
-      "remote-addresses" : "2403:300:*:*:*:*:*:*"
-    },
-    {
-      "action" : "allow",
-      "process" : "/usr/libexec/wifivelocityd",
-      "notes" : "wifivelocityd sends icmp traffic to 17.0.0.0/8",
+      "notes" : "Allow outgoing icmp traffic to 17.0.0.0/8.\n  E.g. wifivelocityd is a known example",
       "protocol" : "icmp",
       "remote-addresses" : "17.*.*.*"
     },
