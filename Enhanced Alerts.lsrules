@@ -1,0 +1,11 @@
+{
+  "description" : "Always alert users for process in this group",
+  "name" : "Enhanced Alerts",
+  "rules" : [
+    {
+      "action" : "ask",
+      "process" : "identifier.APPLE\/com.apple.Terminal",
+      "remote" : "any"
+    }
+  ]
+}
