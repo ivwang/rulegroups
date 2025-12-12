@@ -16,6 +16,12 @@
     },
     {
       "action" : "allow",
+      "notes" : "Allow outgoing icmp traffic to 17.0.0.0/8.\n  E.g. wifivelocityd is a known example",
+      "protocol" : "icmp",
+      "remote-addresses" : "17.*.*.*"
+    },
+    {
+      "action" : "allow",
       "notes" : "Apple IPv6 ranges\n\nRefer to https://ipinfo.io/AS714/2620:149::/32",
       "direction" : "incoming",
       "remote-addresses" : "2620:149:*:*:*:*:*:*"
@@ -24,6 +30,12 @@
       "action" : "allow",
       "notes" : "Apple IPv6 ranges\n\nRefer to https://ipinfo.io/AS714/2620:149::/32",
       "ports" : "80, 443",
+      "remote-addresses" : "2620:149:*:*:*:*:*:*"
+    },
+    {
+      "action" : "allow",
+      "notes" : "Apple IPv6 ranges\n\nRefer to https://ipinfo.io/AS714/2620:149::/32",
+      "protocol" : "ipv6-icmp",
       "remote-addresses" : "2620:149:*:*:*:*:*:*"
     },
     {
@@ -36,6 +48,12 @@
       "action" : "allow",
       "notes" : "Apple South Asia IPv6 ranges\n\nRefer to https://ipinfo.io/AS714/2403:300::/32",
       "ports" : "80, 443",
+      "remote-addresses" : "2403:300:*:*:*:*:*:*"
+    },
+    {
+      "action" : "allow",
+      "notes" : "Apple South Asia IPv6 ranges\n\nRefer to https://ipinfo.io/AS714/2403:300::/32",
+      "protocol" : "ipv6-icmp",
       "remote-addresses" : "2403:300:*:*:*:*:*:*"
     },
     {
@@ -75,12 +93,6 @@
         "apple-mapkit.com",
         "aaplimg.com"
       ]
-    },
-    {
-      "action" : "allow",
-      "notes" : "Allow outgoing icmp traffic to 17.0.0.0/8.\n  E.g. wifivelocityd is a known example",
-      "protocol" : "icmp",
-      "remote-addresses" : "17.*.*.*"
     },
   ]
 }
