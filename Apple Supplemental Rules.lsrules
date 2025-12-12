@@ -35,7 +35,7 @@
     {
       "action" : "allow",
       "notes" : "Apple IPv6 ranges\n\nRefer to https://ipinfo.io/AS714/2620:149::/32",
-      "protocol" : "ipv6-icmp",
+      "protocol" : "58",
       "remote-addresses" : "2620:149:*:*:*:*:*:*"
     },
     {
@@ -53,7 +53,7 @@
     {
       "action" : "allow",
       "notes" : "Apple South Asia IPv6 ranges\n\nRefer to https://ipinfo.io/AS714/2403:300::/32",
-      "protocol" : "ipv6-icmp",
+      "protocol" : "58",
       "remote-addresses" : "2403:300:*:*:*:*:*:*"
     },
     {
