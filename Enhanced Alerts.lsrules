@@ -6,6 +6,11 @@
       "action" : "ask",
       "process" : "identifier.APPLE\/com.apple.Terminal",
       "remote" : "any"
+    },
+    {
+      "action" : "ask",
+      "process" : "identifier.APPLE\/com.apple.curl",
+      "remote" : "any"
     }
   ]
 }
